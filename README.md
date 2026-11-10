@@ -50,6 +50,19 @@ Desde la carpeta del proyecto ejecuta `luajit tests/smoke.lua`. La prueba usa la
 
 Fuentes de implementación: [Gear Planner de OneForAll](https://github.com/smoergi/OneForAll_Forever/blob/main/OneForAll/UI/GearPlanner.lua), [Favourites de AtlasLootClassic](https://github.com/Hoizame/AtlasLootClassic/blob/master/AtlasLootClassic/Addons/Favourites.lua), [eventos de saqueo de Forever](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_APIDocumentationGenerated/LootDocumentation.lua) y [botones de tirada nativos de Forever](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/GroupLootFrame.xml).
 
+## Publicar una versión
+
+Cada push a `main` y cada pull request a `main` genera un ZIP instalable en **Actions → Package Wishlist Alerts → Artifacts**. El paquete incluye la carpeta `WishlistAlerts/` del commit.
+
+Para publicar, actualiza `## Version` en `WishlistAlerts/WishlistAlerts.toc`, sube el commit y envía una etiqueta que coincida con la versión. Por ejemplo, para una versión `0.2.8`:
+
+```bash
+git tag v0.2.8
+git push origin v0.2.8
+```
+
+GitHub crea la release y adjunta `WishlistAlerts-0.2.8.zip`. Los ZIP generados se descargan desde [GitHub Releases](https://github.com/HonzoNebro/wishlist-alerts/releases) y se excluyen del control de versiones. Para publicar también en CurseForge se necesita su proyecto y configurar una integración de subida aparte.
+
 ## Licencia
 
 Wishlist Alerts se publica bajo la [licencia MIT](LICENSE).
