@@ -1,0 +1,21 @@
+## Interface: 16001
+## Title: Wishlist Alerts
+## Notes: Local alerts for items on your other addons' wishlists.
+## Notes-esES: Avisos privados para los objetos deseados de tus otros addons.
+## Notes-esMX: Avisos privados para los objetos deseados de tus otros addons.
+## Notes-deDE: Private Hinweise für Gegenstände auf den Wunschlisten deiner anderen Add-ons.
+## Notes-frFR: Alertes privées pour les objets sur les listes de souhaits de vos autres addons.
+## Notes-ptBR: Alertas privados para itens nas listas de desejos dos seus outros addons.
+## Notes-ruRU: Личные уведомления о предметах из списков желаний других аддонов.
+## Notes-koKR: 다른 애드온의 위시리스트 아이템에 대한 개인 알림입니다.
+## Notes-zhCN: 为其他插件愿望清单中的物品提供个人提醒。
+## Notes-zhTW: 為其他插件願望清單中的物品提供個人提醒。
+## Version: 0.2.6
+## X-License: MIT
+## AllowLoadGameType: camelot
+## OptionalDeps: NeedRoll, LevelMates, OneForAll, AtlasLootClassic
+## SavedVariables: WishlistAlertsDB
+
+Locale.lua
+Sources.lua
+Alerts.lua
